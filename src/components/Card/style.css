@@ -1,0 +1,86 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 0 10px gray;
+  position: relative;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+.three-dot-icon {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.card-description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: pre-wrap;
+  font-size: 14px;
+  color: gray;
+}
+
+.card-data {
+  display: flex;
+  gap: 7px;
+}
+
+.data-title {
+  font-weight: 500;
+}
+
+.data-value {
+  color: gray;
+}
+
+.status {
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.todo {
+  background-color: #ff9e00;
+}
+
+.in_progress {
+  background-color: #1a78d3;
+}
+
+.done {
+  background-color: #4cb051;
+}
+
+.icon-update {
+  color: green;
+  margin-right: 5px;
+}
+
+.icon-delete {
+  color: #d32f2f;
+  margin-right: 5px;
+}
+
+.confirm-buttons-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.confirm-btn {
+  background-color: red;
+}

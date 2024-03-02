@@ -1,0 +1,15 @@
+.form-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-create-btn {
+  background-color: #512da8 !important;
+  color: #fff;
+}
+
+.form-create-btn:hover {
+  background-color: #744fca !important;
+}

@@ -1,0 +1,88 @@
+.main-layout {
+  background-color: #ebf0f7;
+  height: 100svh;
+  width: 100svw;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.main-container {
+  width: calc(100% - 220px);
+  height: calc(100%);
+  gap: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.selected-option-label {
+  font-weight: 700;
+  font-size: 25px;
+  position: relative;
+  letter-spacing: 0.2px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.plus-icon {
+  font-size: 20px;
+}
+
+.create-btn {
+  background-color: #512da8 !important;
+  transition: all 0.4s ease-in-out;
+}
+.create-btn:hover {
+  background-color: #260e5f !important;
+}
+
+.selected-option-label::after {
+  content: "";
+  height: 4px;
+  border-radius: 0.5rem;
+  width: 50px;
+  background-color: #512da8;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.child-container {
+  margin-top: 20px;
+  height: calc(100%);
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.child-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.child-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.child-container::-webkit-scrollbar-thumb {
+  background: #512da8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.child-container::-webkit-scrollbar-thumb:hover {
+  background: #260e5f;
+}
+
+.pagination-section {
+  display: flex;
+  justify-content: center;
+  background-color: #ebf0f7;
+  position: fixed;
+  bottom: 10px;
+  width: calc(100% - 200px);
+}

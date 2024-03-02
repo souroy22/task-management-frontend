@@ -1,0 +1,75 @@
+.sidebar-container {
+  width: 200px;
+  background-color: #512da8;
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.sidebar-top-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.user-name {
+  width: calc(70%);
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.sidebar-mid {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-option {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in;
+  padding: 10px;
+}
+
+.selected-options {
+  background-color: #744fca;
+  border-right: 3px solid white;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.sidebar-bottom {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.logout-icon {
+  font-size: 22px;
+  font-weight: 800;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logout-text {
+  font-size: 20px;
+  font-weight: 600;
+}

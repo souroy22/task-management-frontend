@@ -1,0 +1,10 @@
+#asynchronous-demo {
+  position: relative;
+}
+
+.custom-options {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
