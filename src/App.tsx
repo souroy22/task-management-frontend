@@ -8,6 +8,8 @@ import { customLocalStorage } from "./services/utils/localStorage";
 import { useDispatch } from "react-redux";
 import { useQuery } from "@tanstack/react-query";
 import Loader from "./components/loader";
+import ErrorBoundary from "./components/ErrorBoundary";
+import ErrorComponent from "./pages/error-component";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -31,7 +33,9 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <RouterComponent />
+        <ErrorBoundary fallback={<ErrorComponent />}>
+          <RouterComponent />
+        </ErrorBoundary>
       </BrowserRouter>
       <Toaster />
       {isLoading && <Loader loader={isLoading} />}

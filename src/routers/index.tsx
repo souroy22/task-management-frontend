@@ -7,6 +7,7 @@ import FallBack from "../components/FallBack";
 const LazyPublicRoute = lazy(() => import("./PublicRoute"));
 const LazyPrivateRoute = lazy(() => import("./PrivateRoute"));
 const LazyHomePage = lazy(() => import("../pages/Home"));
+const LazyNoPageFound = lazy(() => import("../pages/NoPageFound"));
 
 const RouterComponent = () => {
   return (
@@ -21,6 +22,7 @@ const RouterComponent = () => {
         <Route element={<LazyPrivateRoute />}>
           <Route path="/" element={<LazyHomePage />} />
         </Route>
+        <Route path="*" element={<LazyNoPageFound />} />
       </Routes>
     </Suspense>
   );
